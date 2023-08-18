@@ -1,0 +1,8 @@
+float:
+  angular:
+  - base_args: ['@metric']
+    constructor: NaiveLSH
+    disabled: false
+    docker_tag: ann-benchmarks-naive_lsh
+    module: ann_benchmarks.algorithms.naive_lsh
+    name: naive_lsh
