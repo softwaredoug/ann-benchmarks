@@ -17,6 +17,6 @@ float:
     name: naive_lsh
     run_groups:
       test:
-        arg_groups: [{}]
+        arg_groups: [{num_projections: 64}]
         args: {}
         query_args: [[]]
