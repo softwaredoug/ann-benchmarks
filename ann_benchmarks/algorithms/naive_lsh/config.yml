@@ -1,8 +1,22 @@
+# Common problems
+#
+# docker.errors.DockerException: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory')) -> go into docker UI and enable the Enable Default docker socket
+#
+#
 float:
+  # My algorithms supported distance metrics I want to test against
   angular:
   - base_args: ['@metric']
+    # The object in my naive_lsh file in this directory
     constructor: NaiveLSH
     disabled: false
+    # An internal docker tag for this image
     docker_tag: ann-benchmarks-naive_lsh
+    # Actual path to the module in ann_benchmarks
     module: ann_benchmarks.algorithms.naive_lsh
     name: naive_lsh
+    run_groups:
+      test:
+        arg_groups: [{}]
+        args: {}
+        query_args: [[]]
