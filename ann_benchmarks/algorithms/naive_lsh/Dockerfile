@@ -5,7 +5,7 @@ FROM ann-benchmarks
 # This is just a numpy C extension of rand projection based
 # locality-sensitive hashing (LSH) which uses hamming distance
 # to approximate cosine distance
-RUN git clone https://github.com/softwaredoug/np-sims.git
+RUN git clone --depth 1 --branch v0.0.3  https://github.com/softwaredoug/np-sims.git
 RUN cd np-sims/np_sims; python3 setup.py  build 
 RUN cd np-sims/np_sims; python3 setup.py  install
 

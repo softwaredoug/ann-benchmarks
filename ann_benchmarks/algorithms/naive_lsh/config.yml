@@ -16,7 +16,23 @@ float:
     module: ann_benchmarks.algorithms.naive_lsh
     name: naive_lsh
     run_groups:
-      test:
+      proj_64:
         arg_groups: [{num_projections: 64}]
+        args: {}
+        query_args: [[]]
+      proj_128:
+        arg_groups: [{num_projections: 128}]
+        args: {}
+        query_args: [[]]
+      proj_256:
+        arg_groups: [{num_projections: 256}]
+        args: {}
+        query_args: [[]]
+      proj_640:
+        arg_groups: [{num_projections: 640}]
+        args: {}
+        query_args: [[]]
+      proj_1280:
+        arg_groups: [{num_projections: 1280}]
         args: {}
         query_args: [[]]
